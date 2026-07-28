@@ -1,7 +1,15 @@
-git config --global user.name "rishabh-023-phoenix" 
+git config --global user.name "rishabh-023-phoenix"
+
 git config --global user.email "rishabh8868847839@gmail.com" 
+
 git clone "https://github.com/rishabh-023-phoenix/FSD-CSE-5th-SEM"
+
 git status
+
 git add .
+
 git commit -m "index file added"
+
 git push {-u origin main} -- later on
+
+git pull
