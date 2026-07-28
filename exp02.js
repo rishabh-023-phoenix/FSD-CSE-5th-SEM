@@ -1,4 +1,11 @@
-function sum(a,b){
-    return a + b;
-}
-console.log("Sum =", sum(10, 20));
+
+
+// const sum=function(a,b){
+//     return a+b;
+// }
+
+// const sum=(a,b)=>{return a+b}
+
+(()=>{
+    console.log("hey...using IIFE")
+})();
