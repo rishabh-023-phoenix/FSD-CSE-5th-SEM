@@ -57,6 +57,12 @@
 // console.log("three")
 
 
+// console.log("one")
+// setTimeout(()=>{console.log("two")},1000)
+// console.log("three")
+
 console.log("one")
-setTimeout(()=>{console.log("two")},1000)
+for(i=0;i<1000;i++){
+    console.log("i="+i);
+}
 console.log("three")
