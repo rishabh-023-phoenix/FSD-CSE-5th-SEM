@@ -17,7 +17,7 @@ async function fetchdata(){
             jsonData.map((ele)=>(
                 `<tr>
                 <td><img src=${ele.image} height=200 width=200></img></td>
-                <td>${ele.title}</td>
+                <td>${ele.title}</td>                  //template literal interpolation
                 <td>${ele.description}</td>
                 <td>${ele.price}</td>
                 </tr>`
