@@ -11,7 +11,7 @@ function ImageManipulation() {
   const [bgColor, setBgColor] = useState("white");
 
   // Image angle
-  const [rotation, setRotation] = useState(30);
+  const [rotation, setRotation] = useState(0);
 
   // Generate random color
   function changeColor() {
@@ -43,7 +43,7 @@ function ImageManipulation() {
 
   // Rotate image
   function rotateImage() {
-    setRotation(prevRotation => prevRotation + 90);
+    setRotation(prevRotation => prevRotation + 30);
   }
 
   return (

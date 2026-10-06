@@ -5,6 +5,7 @@ import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 import MyState from './components/MyState';
 import ImageManipulation from './components/ImageManipulation';
+import MyUseEffect from './components/MyUseEffect';
 
 function App() {
 
@@ -61,7 +62,8 @@ function App() {
 
       <div>
 
-        <ImageManipulation />
+        {/* <ImageManipulation /> */}
+        <MyUseEffect />
 
       </div>
 
