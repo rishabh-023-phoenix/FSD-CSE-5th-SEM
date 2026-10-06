@@ -63,7 +63,8 @@ function App() {
       <div>
 
         {/* <ImageManipulation /> */}
-        <MyUseEffect />
+
+        {/* <MyUseEffect /> */}
 
       </div>
 
