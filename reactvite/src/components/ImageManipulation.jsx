@@ -10,6 +10,9 @@ function ImageManipulation() {
   // Background color
   const [bgColor, setBgColor] = useState("white");
 
+  // Image angle
+  const [rotation, setRotation] = useState(30);
+
   // Generate random color
   function changeColor() {
     const randomColor =
@@ -20,26 +23,27 @@ function ImageManipulation() {
 
   function increaseHeight() {
     setHeight(height + 20);
-    changeColor();
   }
 
   function decreaseHeight() {
     if (height > 20) {
       setHeight(height - 20);
-      changeColor();
     }
   }
 
   function increaseWidth() {
     setWidth(width + 20);
-    changeColor();
   }
 
   function decreaseWidth() {
     if (width > 20) {
       setWidth(width - 20);
-      changeColor();
     }
+  }
+
+  // Rotate image
+  function rotateImage() {
+    setRotation(prevRotation => prevRotation + 90);
   }
 
   return (
@@ -62,6 +66,9 @@ function ImageManipulation() {
           src={fav}
           height={height}
           width={width}
+          style={{
+            transform: `rotate(${rotation}deg)`
+          }}
         />
       </div>
 
@@ -83,8 +90,15 @@ function ImageManipulation() {
         <button onClick={decreaseWidth}>
           Decrease Width
         </button>
-      </div>
 
+        <button onClick={changeColor}>
+          Change Color
+        </button>
+
+        <button onClick={rotateImage}>
+          Rotate Image
+        </button>
+      </div>
     </div>
   );
 }

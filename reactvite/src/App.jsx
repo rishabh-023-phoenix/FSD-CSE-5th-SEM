@@ -1,9 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react';
-// eslint-disable-next-line no-unused-vars
 import heroImg from './assets/hero.png';
-// eslint-disable-next-line no-unused-vars
 import reactLogo from './assets/react.svg';
-// eslint-disable-next-line no-unused-vars
 import viteLogo from './assets/vite.svg';
 import MyState from './components/MyState';
 import ImageManipulation from './components/ImageManipulation';
