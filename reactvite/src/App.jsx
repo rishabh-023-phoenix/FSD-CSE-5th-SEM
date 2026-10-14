@@ -8,8 +8,13 @@ import MyState from './components/MyState';
 import ImageManipulation from './components/ImageManipulation';
 import MyUseEffect from './components/MyUseEffect';
 import FetchProducts from './components/FetchProducts';
-import{BrowserRouter, Route, Routes} from 'react-router-dom'
+
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 import Login from './components/Login';
+import Registration from './components/Registration';
+import Dashboard from './components/Dashboard';
+import Home from './components/Home';
 
 
 function App() {
@@ -81,16 +86,20 @@ function App() {
     // </div>
     <div>
       <BrowserRouter>
-      
-      <Routes>
-        <Route path='/login' element={<Login/>}></Route>
-        <Route path='/register' element={<Registration/>}></Route>
-        <Route path='/dashboard' element={<Dashboard/>}></Route>
-        <Route path='/' element={<Home/>}></Route>
+      <nav>
+        <Link to="/">Home</Link>{" | "}
+        <Link to="/login">Login</Link>{" | "}
+        <Link to="/register">Register</Link>{" | "}
+        <Link to="/dashboard">Dashboard</Link>
+      </nav>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-      
-      </BrowserRouter>
+    </BrowserRouter>
     </div>
   );
 }
